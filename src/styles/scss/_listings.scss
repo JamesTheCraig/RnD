@@ -1,0 +1,25 @@
+
+
+.container-3d {            
+    overflow: hidden;
+    overflow-y: scroll;            
+}
+
+.listings {
+    margin: 0;
+    padding: 0;        
+    list-style: none;        
+    // @include perspective( 460px );
+    // @include backface-visibility(hidden);
+    // @include transform-origin(center left);
+    // @include transform( rotate3d(0, 0.61, 0, -56deg) );
+    .list-item {  }
+    a { 
+        display: block;                
+        padding: 40px;
+        min-width: 100%;
+        min-height: 100%;
+        color: #efefef;                  
+        text-decoration: none; 
+    }
+}

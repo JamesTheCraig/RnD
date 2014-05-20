@@ -1,0 +1,45 @@
+// Mixins
+
+
+
+// Place Holders
+
+%vertical-align {
+  position: relative;
+  top: 50%;
+  @include transform(translateY(50%));  
+}
+
+/*
+ * @param values
+ * @returns
+ *   -webkit-animation: <values>;
+ *           animation: <values>;
+ *
+ * @example
+ *   .selector {
+ *     @include x-animation(jump 1s ease-out);
+ *   }
+ */
+
+@mixin x-animation ($values) {
+    -webkit-animation: $values;
+            animation: $values;
+}
+
+/*
+ * @example
+ *    @include x-keyframes(jump) {
+ *      from { top: 0; }
+ *      to { top: -10px; }
+ *   }
+ */
+@mixin x-keyframes ($name) {
+    @-webkit-keyframes #{$name} {
+        @content;
+    }
+
+    @keyframes #{$name} {
+        @content;
+    }
+}
