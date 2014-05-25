@@ -9,10 +9,10 @@
     margin: 0;
     padding: 0;        
     list-style: none;        
-    // @include perspective( 460px );
-    // @include backface-visibility(hidden);
-    // @include transform-origin(center left);
-    // @include transform( rotate3d(0, 0.61, 0, -56deg) );
+    @include perspective( 460px );
+    @include backface-visibility(hidden);
+    @include transform-origin(center left);
+    @include transform( rotate3d(0, 0.61, 0, -56deg) );
     .list-item {  }
     a { 
         display: block;                
