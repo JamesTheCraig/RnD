@@ -18,8 +18,7 @@ RnD.listings = {
 
         // -($listings.length * $listings.height())            
         $list.css({             
-            translateX : -(screenHeight / 2),
-            rotate3d : '0, 0.61, 0, -56deg',
+            translateX : -(screenHeight / 2),            
             width : screenWidth,
             height: screenHeight,
             opacity: 0
